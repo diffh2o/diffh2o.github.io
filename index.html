@@ -105,6 +105,42 @@ Textual Descriptions</h1>
   </div>
 </section>
 
+
+  
+<!-- <section class="section_video">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="publication-video">
+          <video id="teaser" autoplay controls height="50%">
+            <source src=""
+                    type="video/mp4">
+          </video>
+        </div>
+         <h2 class="subtitle has-text-centered">
+            
+        </h2> 
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<!--/ Abstract. -->
+<section class="section">
+    <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          Generating natural hand-object interactions in 3D is challenging as the resulting hand and object motions are expected to be physically plausible and semantically meaningful. Furthermore, generalization to unseen objects is hindered by the limited scale of available hand-object interaction datasets. In this paper, we propose a novel method, dubbed DiffH2O, which can synthesize realistic, one or two-handed object interactions from provided text prompts and geometry of the object. The method introduces three techniques that enable effective learning from limited data. First, we decompose the task into a grasping stage and an text-based manipulation stage and use separate diffusion models for each. In the grasping stage, the model only generates hand motions, whereas in the manipulation phase both hand and object poses are synthesized. Second, we propose a compact representation that tightly couples hand and object poses and helps in generating realistic hand-object interactions. Third, we propose two different guidance schemes to allow more control of the generated motions: grasp guidance and detailed textual guidance. Grasp guidance takes a single target grasping pose and guides the diffusion model to reach this grasp at the end of the grasping stage, which provides control over the grasping pose. Given a grasping motion from this stage, multiple different actions can be prompted in the manipulation phase. For the textual guidance, we contribute comprehensive text descriptions to the GRAB dataset and show that they enable our method to have more fine-grained control over hand-object interactions. Our quantitative and qualitative evaluation demonstrates that the proposed method outperforms baseline methods and leads to natural hand-object motions. Moreover, we demonstrate the practicality of our framework by utilizing a hand pose estimate from an off-the-shelf pose estimator for guidance, and then sampling multiple different actions in the manipulation stage. 
+          </p>
+        </div>
+      </div>
+    </div> 
+
 <section class="hero is-light is-small">
   <h2 class="title is-3 has-text-centered">Text Descriptions for GRAB (Taheri et. al, 2020) </h2>
   <div class="hero-body">
@@ -170,40 +206,6 @@ Textual Descriptions</h1>
   </div>
 </section>
   
-<!-- <section class="section_video">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <div class="publication-video">
-          <video id="teaser" autoplay controls height="50%">
-            <source src=""
-                    type="video/mp4">
-          </video>
-        </div>
-         <h2 class="subtitle has-text-centered">
-            
-        </h2> 
-      </div>
-    </div>
-  </div>
-</section> -->
-
-
-<!--/ Abstract. -->
-<section class="section">
-    <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-          Generating natural hand-object interactions in 3D is challenging as the resulting hand and object motions are expected to be physically plausible and semantically meaningful. Furthermore, generalization to unseen objects is hindered by the limited scale of available hand-object interaction datasets. In this paper, we propose a novel method, dubbed DiffH2O, which can synthesize realistic, one or two-handed object interactions from provided text prompts and geometry of the object. The method introduces three techniques that enable effective learning from limited data. First, we decompose the task into a grasping stage and an text-based manipulation stage and use separate diffusion models for each. In the grasping stage, the model only generates hand motions, whereas in the manipulation phase both hand and object poses are synthesized. Second, we propose a compact representation that tightly couples hand and object poses and helps in generating realistic hand-object interactions. Third, we propose two different guidance schemes to allow more control of the generated motions: grasp guidance and detailed textual guidance. Grasp guidance takes a single target grasping pose and guides the diffusion model to reach this grasp at the end of the grasping stage, which provides control over the grasping pose. Given a grasping motion from this stage, multiple different actions can be prompted in the manipulation phase. For the textual guidance, we contribute comprehensive text descriptions to the GRAB dataset and show that they enable our method to have more fine-grained control over hand-object interactions. Our quantitative and qualitative evaluation demonstrates that the proposed method outperforms baseline methods and leads to natural hand-object motions. Moreover, we demonstrate the practicality of our framework by utilizing a hand pose estimate from an off-the-shelf pose estimator for guidance, and then sampling multiple different actions in the manipulation stage. 
-          </p>
-        </div>
-      </div>
-    </div> 
-      
  <section class="section">
   <div class="container is-max-desktop">
   <h3 class="title is-3 has-text-centered">Results</h3>
@@ -288,7 +290,7 @@ Textual Descriptions</h1>
 
  <section class="section">
   <div class="container is-max-desktop">
-  <h3 class="title is-3 has-text-centered">Comparison</h3>
+  <h3 class="title is-3 has-text-centered">Comparison to Baseline </h3>
     <div class="columns is-centered">
     <div class="column is-full-width">
       <div class="columns is-centered">
